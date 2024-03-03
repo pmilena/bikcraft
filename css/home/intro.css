@@ -38,25 +38,8 @@
   font-weight: 400;
 }
 
-.intro-content a {
-  display: inline-block;
-  padding: 16px 32px;
-  background: linear-gradient(#ffbf00, #f2a50c) ;
-  border-radius: 4px;
-  color: #332200;
-  font-weight: 500;
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  font-family: 'Poppins';
-  font-weight: 500;
-}
-
 .intro-content span{
   color: #ffbb00;
-}
-
-.intro-content a:hover {
-  background: linear-gradient(#ffb60d, #e59317) ;
 }
 
 .intro-img img{
@@ -66,7 +49,6 @@
 }
 
 @media (max-width: 1200px) {
-
 
 .intro-content{
   margin-top: 100px;
@@ -100,8 +82,4 @@
     font-size: 1.2rem;
   }
   
-  .intro-content a {
-    padding: 12px 24px;
-    font-size: 1rem;
-  }
 }
