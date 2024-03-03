@@ -1,0 +1,107 @@
+
+.intro-general{
+  background-color: #000;
+  box-shadow: inset 0 -120px #fff;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.intro-content {
+  color: #fff;
+  align-self: flex-end;
+  margin-top: 200px;
+  padding-bottom: 240px;
+  
+}
+
+.intro-content h1{
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 32px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.intro-content p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.intro-content a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c) ;
+  border-radius: 4px;
+  color: #332200;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.intro-content span{
+  color: #ffbb00;
+}
+
+.intro-content a:hover {
+  background: linear-gradient(#ffb60d, #e59317) ;
+}
+
+.intro-img img{
+  border-radius: 4px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+
+
+.intro-content{
+  margin-top: 100px;
+}
+
+.intro-content h1{
+  font-size: 3rem;
+}
+}
+
+@media (max-width:800px){
+  .intro{
+    grid-template-columns: 1fr;
+    
+  }
+  .intro-content{
+    padding-bottom: 0px;
+    margin-top: 50px;
+  }
+  .intro-img img{
+    height: 300px;
+    width: 100%;
+  }
+
+  .intro-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .intro-content p{
+    font-size: 1.2rem;
+  }
+  
+  .intro-content a {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
