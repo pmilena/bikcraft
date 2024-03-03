@@ -3,12 +3,11 @@
   padding: 16px 32px;
   background: linear-gradient(#ffbf00, #f2a50c) ;
   border-radius: 4px;
-  color: #332200;
   font-weight: 500;
   font-size: 1.125rem;
   text-transform: uppercase;
   font-family: 'Poppins';
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .botao:hover {

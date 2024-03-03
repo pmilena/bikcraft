@@ -1,5 +1,5 @@
 .header-general {
-  background-color: #000;
+  background-color: var(--color-12);
 }
 
 .header {
@@ -24,7 +24,6 @@
 
 .header-menu a {
   display: inline-block;
-  color: #fff;
   font-size: 1.25rem;
   position: relative;
   font-family: 'Poppins';
@@ -36,7 +35,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background-color: #fff;
+  background-color: var(--color-0);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -54,15 +53,16 @@
   .header-menu a:hover:after {
     display: none;
   }
+
   .header-menu a {
-    background-color: #2e2e2e;
+    background-color: var(--color-11);
     padding: 10px 16px;
     border-radius: 4px;
     font-size: 16px;
     transition: 0.3s;
   }
   .header-menu a:hover {
-    background-color: #404040;
+    background-color: var(--color-10);
   }
 
 }
