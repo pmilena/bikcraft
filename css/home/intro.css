@@ -43,9 +43,6 @@
   margin-top: 100px;
 }
 
-.intro-content h1{
-  font-size: 3rem;
-}
 }
 
 @media (max-width:800px){
@@ -65,10 +62,6 @@
   .intro-content h1{
     font-size: 2.5rem;
     margin-bottom: 16px;
-  }
-  
-  .intro-content p{
-    font-size: 1.2rem;
   }
   
 }
