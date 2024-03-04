@@ -3,6 +3,7 @@
 @import "./global/typography.css";
 @import "./home/intro.css";
 @import "./bike/bike-list.css";
+@import "./bike/technology.css";
 @import "./utilities/components.css";
 @import "./utilities/colors.css";
 

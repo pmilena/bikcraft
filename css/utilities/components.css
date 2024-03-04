@@ -26,3 +26,22 @@
   margin-right: auto;
   padding: 20px;
 }
+
+.link{
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--primary-1); 
+  transition: 0.3s;
+}
+
+.link::after{
+  content: ""; 
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+}
+
+.link:hover{
+  color: var(--color-0);
+}
