@@ -1,0 +1,10 @@
+.parceiros-list h2{
+    margin-bottom: 102px;
+}
+
+.parceiros-list-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap: 92px 202px;
+}
