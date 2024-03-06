@@ -7,8 +7,18 @@
   font: 600 1.125rem 'Poppins', sans-serif;
 }
 
+
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317) ;
+}
+
+.botao.fosco{
+  background: var(--color-10) ;
+  color: var(--color-4);
+}
+
+.botao.fosco:hover {
+  background: linear-gradient(var(--color-7), var(--color-8)) ;
 }
 
 @media (max-width:800px){
