@@ -51,6 +51,7 @@
 @media (max-width: 1000px) {
   .testemonial {
     grid-template-columns: 1fr;
+    padding-top: 60px;
   }
 
   .testemonial-img img {

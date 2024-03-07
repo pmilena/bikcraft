@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 2000px;
 }
 h1,
 h2,
@@ -30,4 +29,14 @@ img {
 
 img[src$=jpg]{
   border-radius: 4px;
+}
+
+.titulo-bg{
+  background-color: var(--color-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sub-titulo{
+  text-transform: uppercase;
 }
