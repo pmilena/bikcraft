@@ -1,38 +1,35 @@
-.bicicletas-content{
+.bicicletas-page-bg {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.bicicletas-content-item{
+.bicicletas-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
 }
 
-.bicicletas-content-items-txt{
+.bicicletas-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
 }
 
-.seta{
+.bicicletas-content h3,
+p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-content .botao {
+  display: grid;
   place-self: end;
 }
 
-.bicicletas-content-items-txt h3,
-.bicicletas-content-items-txt h3 + p{
- grid-column: 1/-1;
-}
-
-.bicicletas-content-items-txt ul{
-  display: flex;
-  flex-direction: column; 
-}
-
-.bicicletas-content-items-txt li{
+.advantages li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
-.bicicletas-content-items-txt li img{
- width: 20px;
+.advantages li img {
+  width: 20px;
 }
