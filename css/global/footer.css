@@ -31,6 +31,16 @@
     gap: 24px;
 }
 
+.contato-geral ul a:nth-child(2)::after,
+.contato-geral ul a:nth-child(4)::after{
+    content: "";
+    display: block;
+    background-color: var(--color-11);
+    width: 80%;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
 @media (max-width:850px){
     .footer{
         grid-template-columns: 1fr 2fr;

@@ -1,35 +1,124 @@
-.bicicletas-page-bg {
+.bike-item {
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-content: center;
+  
+ 
+}
+.bike-item:not(last-child){
+  margin-bottom: 60px;
+}
+
+
+.bike-item-bg{
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.bicicletas-item {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 40px;
-}
-
-.bicicletas-content {
+.bike-item-info {
   display: grid;
   grid-template-columns: 1fr auto;
 }
 
-.bicicletas-content h3,
-p {
-  grid-column: 1/-1;
-}
-
-.bicicletas-content .botao {
+.bike-item-info .botao {
   display: grid;
   place-self: end;
+  padding: 16px 32px;
 }
 
-.advantages li {
+.bike-item-info .botao span::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background: url(/img/icones/seta.svg);
+  place-self: end;
+  margin-left: 10px;
+}
+
+.bike-item-info-content h3 {
+  margin-bottom: 20px;
+}
+
+.bike-item-info-content h3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--primary-1);
+}
+
+.bike-item-info-content p {
+  margin-bottom: 32px;
+}
+
+.bike-item-info-content ul li {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
-.advantages li img {
-  width: 20px;
+.bike-item-info-content ul li img {
+  width: 24px;
+}
+
+.bike-item-img {
+  position: relative;
+}
+
+.bike-item-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.bike-item-img span{
+  position: absolute;
+  right: 0;
+  top: 24px;
+  background-color: var(--color-11);
+  border-radius: 4px 0 0 4px;
+  padding: 8px 16px 8px 8px;
+
+}
+
+.bike-item-bg-black{
+  background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 30%);
+}
+
+.bike-item-bg-black .bike-item{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 1000px) {
+  .bike-item {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .bike-item-bg{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .bike-item-bg-black{
+    background:  var(--color-11);
+  }
+}
+
+@media (max-width: 600px) {
+  .bike-item-bg {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .bike-item-info {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-item-info .botao {
+    place-self: start;
+    margin-top: 8px;
+  }
 }
