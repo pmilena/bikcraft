@@ -33,6 +33,12 @@
   margin-top: 12px;
 }
 
+.vantagens-bg {
+  background-color: var(--color-12);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .valor {
   display: flex;
   flex-direction: column;
@@ -53,6 +59,75 @@
   margin-right: 8px;
 }
 
+.vantagens-seguros-page-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  gap: 40px;
+  margin-top: 92px;
+}
+
+.vantagens-seguros-page-item li {
+  max-width: 40ch;
+}
+
+.vantagens-seguros-page-item li h4 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.questions-bg {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.questions-bg h2 {
+  margin-bottom: 108px;
+}
+
+.questions-bg dl > div {
+  display: grid;
+  gap: 16px;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.questions-bg dl > div:nth-child(odd) {
+background-color: var(--color-1);
+}
+
+.questions-bg dl > div > dd{
+  max-width: 80ch;
+}
+
+.questions-bg dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.questions-bg dt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--primary-1);
+}
+
+.questions-bg dt::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url(../../img/icones/seta-abrir.svg);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.questions-bg dt:hover::after {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 1200px) {
   .seguro-valor {
     flex-wrap: wrap;
@@ -61,6 +136,24 @@
 
   .seguros h2 {
     margin-bottom: 60px;
+  }
+
+  .vantagens-seguros-page-item {
+    margin-top: 42px;
+  }
+
+  .vantagens-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .questions-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .questions-bg h2 {
+    margin-bottom: 56px;
   }
 }
 @media (max-width: 600px) {
@@ -82,5 +175,13 @@
 
   .seguros-bg {
     padding-bottom: 60px;
+    padding-top: 0px;
+  }
+
+  #seguros .titulo-bg{
+    padding-bottom: 0px;
+    padding-top: 32px;
   }
 }
+
+
