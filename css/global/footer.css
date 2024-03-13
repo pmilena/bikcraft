@@ -31,6 +31,11 @@
     gap: 24px;
 }
 
+.contato-geral ul li:nth-child(even)
+{
+    border-bottom: 0.2px var(--color-10) solid;
+    padding-bottom: 10px;
+}
 
 @media (max-width:850px){
     .footer{
