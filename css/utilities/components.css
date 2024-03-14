@@ -5,6 +5,8 @@
   border-radius: 4px;
   text-transform: uppercase;
   font: 600 1.125rem 'Poppins', sans-serif;
+  border: none;
+  cursor: pointer;
 }
 
 

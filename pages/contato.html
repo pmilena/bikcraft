@@ -39,68 +39,135 @@
       </ul>
     </div>
   </header>
-<main id="contato">
+  <main id="contato">
 
-  <div class="contato-bg">
+    <div class="contato-bg">
 
-  <div class="titulo-bg">
-    <div class="titulo container">
-      <span class="sub-titulo font-2-l color-5">
-        resposta em até 24h
-      </span>
-      <h2 class="font-1-xxl color-0">nosso contato<span class="primary-1">.</span></h2>
-    </div>
-  </div>
-
-  <div class="contato-bg-interno container">
-    <section class="contato contato-dados-bg" aria-label="endereço">
-      <div class="contato-dados">
-        <h3 class="color-0 font-1-m-b" >Loja Online</h3>
-        <div class="contato-endereco contato-endereco-estado color-5 font-2-s">
-          <p>Rua Ali Perto, 35</p>
-          <p>Rio de Janeiro - RJ</p>
-          <p>Brasil - Terra Via Láctea</p>
-        </div>
-
-        <address class="contato-endereco color-5 font-2-s">
-          <a href="mailto:vendas@bikcraft.com">vendas@bikcraft.com</a>
-          <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          <a href="tel:+552199999999">+55 21 9999-9999</a>
-        </address>
-
-        <div class="contato-redes">
-          <img src="../img/redes/facebook-p.svg" alt="">
-          <img src="../img/redes/instagram-p.svg" alt="">
-          <img src="../img/redes/youtube-p.svg" alt="">
+      <div class="titulo-bg">
+        <div class="titulo container">
+          <span class="sub-titulo font-2-l color-5">
+            resposta em até 24h
+          </span>
+          <h2 class="font-1-xxl color-0">nosso contato<span class="primary-1">.</span></h2>
         </div>
       </div>
-    </section>
 
-    <section class="contato contato-formulario-bg" aria-label="formulário">
-      <div class="contato-formulario">
-        <form class="form" action="./contato.html">
+      <div class="contato-bg-interno container">
+        <section class="contato contato-dados-bg" aria-label="endereço">
+          <div class="contato-dados">
+            <h3 class="color-0 font-1-m-b">Loja Online</h3>
+            <div class="contato-endereco contato-endereco-estado color-5 font-2-s">
+              <p>Rua Ali Perto, 35</p>
+              <p>Rio de Janeiro - RJ</p>
+              <p>Brasil - Terra Via Láctea</p>
+            </div>
+
+            <address class="contato-endereco color-5 font-2-s">
+              <a href="mailto:vendas@bikcraft.com">vendas@bikcraft.com</a>
+              <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+              <a href="tel:+552199999999">+55 21 9999-9999</a>
+            </address>
+
+            <div class="contato-redes">
+              <img src="../img/redes/facebook-p.svg" alt="">
+              <img src="../img/redes/instagram-p.svg" alt="">
+              <img src="../img/redes/youtube-p.svg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="contato contato-formulario-bg" aria-label="formulário">
+          <div class="contato-formulario">
+            <form class="form" action="./contato.html">
+              <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="nome" placeholder="Seu nome">
+              </div>
+              <div>
+                <label for="tel">Telefone</label>
+                <input type="text" id="tel" name="tel" placeholder="(21) 9999-9999">
+              </div>
+              <div class="col-2">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="nome@email.com">
+              </div>
+              <div class="col-2">
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="msg" rows="5" placeholder="O que você precisa?"></textarea>
+              </div>
+
+              <button class="botao">enviar mensagem</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="local-stories-bg">
+        <section class="local-stories container">
           <div>
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="nome" placeholder="Seu nome">
-        </div>
-        <div>
-          <label for="tel">Telefone</label>
-          <input type="text" id="tel" name="tel" placeholder="(21) 9999-9999">
-        </div>
-        <div class="col-2">
-          <label  for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="nome@email.com">
-        </div>
-        <div class="col-2">
-          <label for="msg">Mensagem</label>
-          <textarea name="msg" id="msg" rows="5" placeholder="O que você precisa?"></textarea>
-        </div>
-        </form>
+            <div class="titulo container">
+              <h2 class="font-1-xxl color-11">lojas locais<span class="primary-1">.</span></h2>
+            </div>
+          </div>
+
+          <div class="local-store-city">
+            <div class="local-store-city-item">
+              <div class="local-store-img">
+                <img src="../img/lojas/rj.jpg" alt="mapa com localização da loja física na cidade do Rio de Janeiro">
+              </div>
+              <div class="local-store-city-content">
+                <h3 class="color-12 font-1-xl">Rio de Janeiro</h3>
+
+                <div class="local-store-city-data color-8 font-2-m">
+
+                  <div>
+                    <p>Rua Ali Perto, 25</p>
+                    <p>Rio de Janeiro - RJ</p>
+                  </div>
+
+                  <div>
+                    <p>rio@bikcraft.com</p>
+                    <p>21 9999-9999</p>
+                  </div>
+
+                </div>
+
+                <div class="local-store-city-func font-1-s color-12">
+                  <p>08-18h de seg à dom</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="local-store-city-item">
+              <div class="local-store-img">
+                <img src="../img/lojas/sp.jpg" alt="mapa com localização da loja física na cidade de São Paulo">
+              </div>
+              <div class="local-store-city-content">
+                <h3 class="color-12 font-1-xl">São Paulo</h3>
+
+                <div class="local-store-city-data color-8 font-2-m">
+
+                  <div>
+                    <p>Rua Ali Perto, 25</p>
+                    <p>Rio de Janeiro - SP</p>
+                  </div>
+
+                  <div>
+                    <p>sp@bikcraft.com</p>
+                    <p>11 9999-9999</p>
+                  </div>
+
+                </div>
+                <div class="local-store-city-func font-1-s color-12">
+                  <p>08-18h de seg à dom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-  </div>
-</main>
+    </div>
+  </main>
   <footer class="footer-bg">
 
     <div class="container footer">
