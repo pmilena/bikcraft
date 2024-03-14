@@ -1,0 +1,124 @@
+.contato-bg {
+  background: linear-gradient(var(--color-11) 500px, var(--color-2) 0px);
+}
+.contato-bg-interno {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.contato {
+  padding: 32px;
+}
+.contato-dados-bg {
+  background-color: var(--color-12);
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados-bg h3 {
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+  padding-left: 28px;
+}
+
+.contato-endereco p:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+}
+
+.contato-endereco-estado {
+  background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+}
+address.contato-endereco {
+  display: grid;
+  gap: 4px;
+  background: url(../../img/icones/email.svg) no-repeat 0px 2px;
+}
+
+address.contato-endereco a:last-child {
+  margin-top: 28px;
+  position: relative;
+}
+
+address.contato-endereco a:last-child::before {
+  content: "";
+  display: inline-block;
+  background: url(../../img/icones/telefone.svg);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: -28px;
+}
+
+.contato-formulario-bg {
+  background-color: var(--color-0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.contato-formulario form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contato-formulario form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background-color: var(--color-1);
+  border: 1px solid var(--color-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-1);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+#contato {
+  background-color: var(--color-2);
+}
+
+@media (max-width: 800px) {
+  .contato-bg-interno {
+    grid-template-columns: 1fr;
+  }
+
+  #contato .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .contato-formulario form div:first-child,
+  .contato-formulario form div:nth-child(2){
+    grid-column: span 2;
+  }
+
+  .contato-formulario-bg {
+
+    border-radius: 0px 4px 4px 0px;
+  }
+}
