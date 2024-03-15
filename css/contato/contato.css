@@ -9,7 +9,7 @@
   padding: 32px;
 }
 .contato-dados-bg {
-  background-color: var(--color-12);
+  background: var(--color-12) url(../../img/dec/bottom-left.svg) no-repeat bottom 20px left 20px;
   border-radius: 4px 0 0 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -57,7 +57,8 @@ address.contato-endereco a:last-child::before {
 }
 
 .contato-formulario-bg {
-  background-color: var(--color-0);
+  background: var(--color-0) url(../../img/dec/bottom-right.svg) no-repeat
+    bottom 20px right 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0px 4px 4px 0px;
 }
@@ -188,6 +189,10 @@ address.contato-endereco a:last-child::before {
 
   .local-store-city-data {
     gap: 40px;
+  }
+
+  .contato-dados-bg {
+    background: var(--color-12);
   }
 }
 
