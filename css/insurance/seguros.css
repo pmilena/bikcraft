@@ -95,12 +95,12 @@
 background-color: var(--color-1);
 }
 
-.questions-bg dl > div > dd{
+.js .questions-bg dl > div > dd{
   max-width: 80ch;
   display: none;
 }
 
-.questions-bg dl > div > dd.ativa{
+.js .questions-bg dl > div > dd.ativa{
   display: block;
 }
 
