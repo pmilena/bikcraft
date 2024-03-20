@@ -40,7 +40,23 @@ function showAnswer(event){
 
 function questionEvent(pergunta){
   pergunta.addEventListener('click', showAnswer);
-
 }
 
 perguntas.forEach(questionEvent);
+
+//Galeria - trocar imagem
+
+const galeria = document.querySelectorAll('.bike-interna_img img');
+const bikeInterna = document.querySelector('.bike-interna_img');
+
+function trocarImagem(event){
+const img = event.currentTarget;
+bikeInterna.prepend(img);
+}
+
+
+function eventosGaleria(img){
+  img.addEventListener('click', trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
